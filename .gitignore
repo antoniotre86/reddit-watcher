@@ -1,0 +1,8 @@
+/notebooks/
+/package/
+/.env
+/deployment-package.zip
+/.ipynb_checkpoints/
+*.pyc
+.DS_Store
+.idea/
