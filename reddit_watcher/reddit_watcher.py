@@ -9,11 +9,13 @@ import praw
 
 class RedditWatcher(object):
 
+    version = "0.0"
+
     def __init__(self, client_id, secret, reddit_username, reddit_password, output_subreddit):
         self.reddit = praw.Reddit(
             client_id=client_id,
             client_secret=secret,
-            user_agent='python:watchful_cucumber:0.0.0 (by u/watchful-cucumber)',
+            user_agent=f'python:{reddit_username}:{self.version} (by u/{reddit_username})',
             username=reddit_username,
             password=reddit_password,
         )
