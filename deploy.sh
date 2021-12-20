@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install praw --target ./package
+pip install -r requirements.txt --target ./package
 cd package
 zip -r ../deployment-package.zip .
 cd ..
