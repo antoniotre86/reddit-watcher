@@ -26,6 +26,8 @@ class RedditWatcher(object):
 
         subreddit = self.reddit.subreddit(subreddit)
         for submission in subreddit.new():
+            if submission.created_utc < time.time() - 24*3600:
+                continue
             there = False
             term_found = []
             for term in terms:
