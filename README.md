@@ -3,12 +3,12 @@
 Reddit bot that runs on AWS Lambda and scans recent submission titles for given terms or regexes. 
 The submissions it finds are then cross-posted to a separate subreddit. 
 
-##Requirements
+## Requirements
 * Python 3.8
 * praw https://praw.readthedocs.io
 * AWS account
 
-##Installation
+## Installation
 
 Clone the repository to your local machine
 ```
